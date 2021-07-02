@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="passContainer">
+        <span>Password Generator Tool</span>
+        <h2>Generate a secure password</h2>
+        <div class="passHeader">
+            <div class="pass" id="pass">
+                mqxyd7#ecwkaa2r
+            </div>
+            <button class="copy" id="copy">Copy</button>
+        </div>
+        <div class="passBody">
+            <h3>Customize Your Password</h3>
+            <div class="options">
+                <div class="leftOptions">
+                    <div class="formControl">
+                        <div class="lengthLabel">
+                            <label for="length">Password Length</label>
+                        </div>
+                        <div class="lengthInput">
+                            <input class="length" id="length" type="number" min="4" max="40" value="4">
+                            <input class="range" id="range" type="range" min="4" max="40" value="20">
+                        </div>
+                    </div>
+                </div>
+                <div class="rightOptions">
+                    <div class="formControl">
+                        <input id="uppercase" class="uppercase" type="checkbox">
+                        <label for="uppercase">Uppercase</label>
+                    </div>
+                    <div class="formControl">
+                        <input id="lowercase" class="lowercase" type="checkbox">
+                        <label for="lowercase">Lowercase</label>
+                    </div>
+                    <div class="formControl">
+                        <input id="number" class="number" type="checkbox">
+                        <label for="number">Numbers</label>
+                    </div>
+                    <div class="formControl">
+                        <input id="symbol" class="symbol" type="checkbox">
+                        <label for="symbol">Include Symbols</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="passFooter">
+            <button class="generatePass" id="generatePass">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
